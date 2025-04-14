@@ -7,9 +7,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">Relay</h3>
-            <p className="text-white/70 mb-4">
-              Quality Driven Next-Gen Automation for building reliable and robust applications.
-            </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/70 hover:text-white transition-colors">
                 <svg
