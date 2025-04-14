@@ -134,6 +134,14 @@ const CapabilitiesSection = () => {
             {capabilities.map((capability) => (
               capability.id === selectedCapability && (
                 <div key={capability.id} className="max-w-3xl mx-auto">
+                  <div className="mb-8 overflow-hidden rounded-xl shadow-lg">
+                    <img 
+                      src={capability.image} 
+                      alt={capability.title} 
+                      className="w-full h-64 object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                   <h3 className="text-2xl font-bold mb-4">{capability.title}</h3>
                   <p className="text-lg mb-6">{capability.description}</p>
                   <div className="space-y-4">
