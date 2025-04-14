@@ -20,7 +20,7 @@ const CapabilitiesSection = () => {
       title: "Functional Automation",
       subtitle: "End to End Automation Framework",
       description: "Orchestrate test flows effortlessly with a few clicks – no code needed",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
       features: [
         "Automate execution using Selenium and Playwright frameworks",
         "Import APIs using Swagger for quick and structured test setups",
