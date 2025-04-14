@@ -3,8 +3,8 @@ import { Bot, Zap, Brain, EyeIcon, Bug, Wand2, FileText, CheckCircle2, Database 
 const features = [
   {
     icon: <FileText className="h-6 w-6 text-white" />,
-    title: "Intelligent Email Summary Generation",
-    description: "Automatically generate concise summaries from lengthy email threads for quick understanding.",
+    title: "Intelligent Test Results Summary",
+    description: "Automatically generate simplified summaries from complex test execution results for quick analysis.",
   },
   {
     icon: <CheckCircle2 className="h-6 w-6 text-white" />,
