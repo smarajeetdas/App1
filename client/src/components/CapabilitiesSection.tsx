@@ -107,14 +107,7 @@ const CapabilitiesSection = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
-                  <p className="text-sm opacity-80 mb-4">{capability.subtitle}</p>
-                  <p className="text-sm mb-4">{capability.description}</p>
-                  <Button
-                    variant={selectedCapability === capability.id ? "secondary" : "default"}
-                    className="w-full"
-                  >
-                    Learn More
-                  </Button>
+                  <p className="text-sm opacity-80">{capability.subtitle}</p>
                 </div>
               </div>
             ))}
