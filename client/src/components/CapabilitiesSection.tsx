@@ -21,7 +21,7 @@ const CapabilitiesSection = () => {
       title: "Functional Automation",
       subtitle: "End to End Automation Framework",
       description: "Orchestrate test flows effortlessly with a few clicks – no code needed",
-      image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
       features: [
         "Automate execution using Selenium and Playwright frameworks",
         "Import APIs using Swagger for quick and structured test setups",
@@ -36,7 +36,7 @@ const CapabilitiesSection = () => {
       title: "Performance Lab",
       subtitle: "Real-World Performance Testing",
       description: "Reuse functional test cases to execute multi-region, scalable scenarios",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80",
       features: [
         "Design load configuration based on user traffic",
         "Simulate load from multiple geo-locations",
@@ -51,7 +51,7 @@ const CapabilitiesSection = () => {
       title: "Mobile Automation",
       subtitle: "Comprehensive Mobile Testing",
       description: "Conduct seamless mobile application tests on physical and cloud-based devices",
-      image: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80",
       features: [
         "Executions on SauceLab & Physical Device",
         "Real time capabilities of localization",
@@ -66,7 +66,7 @@ const CapabilitiesSection = () => {
       title: "Desktop Automation",
       subtitle: "Cross-Platform Desktop Testing",
       description: "Unified testing across Windows and macOS platforms",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80",
       features: [
         "Robust, script-free test creation",
         "Compatible with Windows and MAC OS",
@@ -81,7 +81,7 @@ const CapabilitiesSection = () => {
       title: "Chaos Simulator",
       subtitle: "Controlled Chaos Engineering",
       description: "Introduce failure. Build confidence. Empower your teams",
-      image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
       features: [
         "Test Failure and uncover system weakness",
         "Simulate real-world infrastructure issues",
