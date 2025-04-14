@@ -40,8 +40,8 @@ const Home = () => {
       <Header />
       <main>
         <HeroSection />
-        <IntroSection />
         <CapabilitiesSection />
+        <IntroSection />
         <AIFeaturesSection />
         <TestimonialSection />
         <CTASection />

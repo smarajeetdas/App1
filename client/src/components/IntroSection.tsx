@@ -40,8 +40,9 @@ const IntroSection = () => {
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Quality Driven Next-Gen Automation</h2>
           <p className="text-lg text-slate-700/80">
-            Relay offers comprehensive testing solutions utilized by Adobe Engineering Teams to build
-            reliable and robust products. Our platform streamlines the testing process with no-code
+            A comprehensive quality-driven next-generation application offering exceptional user
+            experience in both automated functional testing (UI, API, Mobile & Desktop) and
+            non-functional testing (Performance & Chaos). Our platform streamlines the testing process with no-code
             automation, allowing teams to focus on building great products.
           </p>
         </div>
