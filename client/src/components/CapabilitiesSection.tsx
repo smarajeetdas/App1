@@ -65,7 +65,7 @@ const CapabilitiesSection = () => {
       title: "Desktop Automation",
       subtitle: "Cross-Platform Desktop Testing",
       description: "Unified testing across Windows and macOS platforms",
-      image: "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
       features: [
         "Robust, script-free test creation",
         "Compatible with Windows and MAC OS",
