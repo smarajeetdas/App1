@@ -87,16 +87,7 @@ const CapabilitiesSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Capabilities</h2>
-        
-        {selectedCapability && (
-          <div className="mb-8 flex justify-center">
-            <img 
-              src={capabilities.find(cap => cap.id === selectedCapability)?.image} 
-              alt={capabilities.find(cap => cap.id === selectedCapability)?.title}
-              className="max-w-2xl w-full rounded-xl shadow-2xl"
-            />
-          </div>
-        )}
+
         <div className="relative overflow-hidden mb-16">
           <div className="flex animate-scroll space-x-8 py-4">
             {[...capabilities, ...capabilities].map((capability, index) => (
@@ -107,10 +98,7 @@ const CapabilitiesSection = () => {
                     ? "bg-primary text-white"
                     : "bg-slate-50 hover:bg-slate-100"
                 }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedCapability(capability.id);
-                }}
+                onClick={() => setSelectedCapability(capability.id)}
               >
                 <img 
                   src={capability.image} 
