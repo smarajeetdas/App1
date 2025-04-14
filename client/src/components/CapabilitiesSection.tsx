@@ -50,7 +50,7 @@ const CapabilitiesSection = () => {
       title: "Mobile Automation",
       subtitle: "Comprehensive Mobile Testing",
       description: "Conduct seamless mobile application tests on physical and cloud-based devices",
-      image: "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=800&q=80",
       features: [
         "Executions on SauceLab & Physical Device",
         "Real time capabilities of localization",
