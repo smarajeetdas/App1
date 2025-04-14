@@ -21,8 +21,8 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
             A comprehensive quality-driven next-generation application offering exceptional user
-            experience in both automated functional testing (UI, API, Mobile & Desktop) and
-            non-functional testing (Performance & Chaos).
+            experience across functional (API, Web, Mobile & Desktop) and non-functional
+            (Performance & Chaos) automation testing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="#capabilities">
