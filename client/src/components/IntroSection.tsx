@@ -35,7 +35,7 @@ const features = [
 
 const IntroSection = () => {
   return (
-    <section id="capabilities" className="py-16 bg-slate-50">
+    <section id="capabilities" className="py-12 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Quality Driven Next-Gen Automation</h2>

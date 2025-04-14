@@ -20,7 +20,7 @@ const features = [
 
 const AIFeaturesSection = () => {
   return (
-    <section id="ai-features" className="py-16 bg-slate-700/5">
+    <section id="ai-features" className="py-12 bg-slate-700/5">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto mb-12">
           <span className="inline-block px-4 py-1 bg-slate-700/10 rounded-full text-sm font-semibold text-slate-700 mb-4">
