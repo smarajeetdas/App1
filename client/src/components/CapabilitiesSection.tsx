@@ -79,13 +79,14 @@ const CapabilitiesSection = () => {
       id: "chaos",
       title: "Chaos Simulator",
       subtitle: "Controlled Chaos Engineering",
-      description: "Introduce failure. Build confidence. Empower your teams",
+      description: "Introduce failure. Build confidence. Empower your teams with controlled chaos engineering to uncover weaknesses before your service teams do.",
       image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
       features: [
-        "Test Failure and uncover system weakness",
-        "Simulate real-world infrastructure issues",
-        "Launch fault experiments without overhead",
-        "Bring chaos to where applications live"
+        "Precision Fault Injection for infrastructure issues",
+        "Self-Service Chaos GameDays with unified interface",
+        "Support for Gremlin, AWS FIS, and Chaos Mesh",
+        "End-to-End coverage from VMs to Kubernetes",
+        "Multi-cloud and Ethos environment support"
       ],
       learnMore: "Learn more about chaos engineering"
     }
