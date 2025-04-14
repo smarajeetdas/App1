@@ -38,7 +38,7 @@ const IntroSection = () => {
     <section id="capabilities" className="py-12 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Quality Driven Next-Gen Automation</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black/80">Quality Driven Next-Gen Automation</h2>
           <p className="text-lg text-slate-700/80">
             A comprehensive quality-driven next-generation application offering exceptional user
             experience in both automated functional testing (UI, API, Mobile & Desktop) and
