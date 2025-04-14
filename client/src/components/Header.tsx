@@ -22,7 +22,7 @@ const Header = () => {
             <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
               Relay
             </Link>
-            <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 -mt-1 hidden md:block">
+            <span className="text-xs font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 -mt-1 hidden md:block">
               AI Powered
             </span>
           </div>
