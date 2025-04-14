@@ -139,11 +139,11 @@ const CapabilitiesSection = () => {
                       <img 
                         src={capability.image} 
                         alt={capability.title} 
-                        className="w-full h-64 object-cover"
+                        className="w-full h-[400px] object-cover"
                         loading="lazy"
                       />
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-1/2 pt-2">
                       <h3 className="text-2xl font-bold mb-4">{capability.title}</h3>
                       <p className="text-lg mb-6">{capability.description}</p>
                       <div className="space-y-4">
