@@ -39,10 +39,7 @@ const IntroSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black/80">Quality Driven Next-Gen Automation</h2>
-          <p className="text-lg text-slate-700/80">
-            Our platform streamlines the testing process with no-code
-            automation, allowing teams to focus on building great products.
-          </p>
+          <p className="text-lg text-slate-700/80">Our platform streamlines the testing process with no-code automation, allowing teams to focus on building great products.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
