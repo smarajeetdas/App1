@@ -133,29 +133,33 @@ const CapabilitiesSection = () => {
           <div className="animate-fade-in">
             {capabilities.map((capability) => (
               capability.id === selectedCapability && (
-                <div key={capability.id} className="max-w-3xl mx-auto">
-                  <div className="mb-8 overflow-hidden rounded-xl shadow-lg">
-                    <img 
-                      src={capability.image} 
-                      alt={capability.title} 
-                      className="w-full h-64 object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">{capability.title}</h3>
-                  <p className="text-lg mb-6">{capability.description}</p>
-                  <div className="space-y-4">
+                <div key={capability.id} className="max-w-5xl mx-auto">
+                  <div className="flex gap-8 items-start">
+                    <div className="w-1/2 overflow-hidden rounded-xl shadow-lg flex-shrink-0">
+                      <img 
+                        src={capability.image} 
+                        alt={capability.title} 
+                        className="w-full h-64 object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="w-1/2">
+                      <h3 className="text-2xl font-bold mb-4">{capability.title}</h3>
+                      <p className="text-lg mb-6">{capability.description}</p>
+                      <div className="space-y-4">
                     {capability.features.map((feature, index) => (
                       <div key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
                         <p>{feature}</p>
                       </div>
                     ))}
-                  </div>
-                  <div className="mt-8">
-                    <Button className="w-full md:w-auto">
-                      {capability.learnMore}
-                    </Button>
+                      </div>
+                      <div className="mt-8">
+                        <Button className="w-full md:w-auto">
+                          {capability.learnMore}
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )
