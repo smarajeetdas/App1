@@ -102,26 +102,26 @@ const CapabilitiesSection = () => {
             {[...capabilities, ...capabilities].map((capability, index) => (
               <div
                 key={`${capability.id}-${index}`}
-                className={`flex-none w-96 rounded-xl cursor-pointer transition-all duration-300 overflow-hidden border-2 ${
+                className={`flex-none w-72 rounded-xl cursor-pointer transition-all duration-300 overflow-hidden border-2 ${
                   selectedCapability === capability.id
                     ? "bg-primary/10 border-primary shadow-lg scale-105"
                     : "bg-slate-50 hover:bg-slate-100 border-transparent"
                 }`}
                 onClick={() => setSelectedCapability(capability.id)}
               >
-                <div className={`flex items-center p-6 ${
+                <div className={`flex items-center p-4 ${
                   selectedCapability === capability.id
                     ? "bg-primary/5"
                     : "bg-slate-100"
                 }`}>
                   <div className="flex-shrink-0">
                     {React.createElement(capabilityIcons[capability.id as keyof typeof capabilityIcons], {
-                      className: `w-12 h-12 ${selectedCapability === capability.id ? "text-primary scale-110" : "text-primary/70"}`
+                      className: `w-8 h-8 ${selectedCapability === capability.id ? "text-primary scale-110" : "text-primary/70"}`
                     })}
                   </div>
-                  <div className="ml-6">
-                    <h3 className="text-xl font-semibold">{capability.title}</h3>
-                    <p className="text-sm opacity-80">{capability.subtitle}</p>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-semibold">{capability.title}</h3>
+                    <p className="text-xs opacity-80">{capability.subtitle}</p>
                   </div>
                 </div>
               </div>
