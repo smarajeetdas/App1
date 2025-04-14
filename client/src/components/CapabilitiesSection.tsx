@@ -87,9 +87,9 @@ const CapabilitiesSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Capabilities</h2>
-
+        
         {selectedCapability && (
-          <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-20 flex items-center justify-center" onClick={() => setSelectedCapability(null)}>
+          <div className="mb-8 flex justify-center">
             <img 
               src={capabilities.find(cap => cap.id === selectedCapability)?.image} 
               alt={capabilities.find(cap => cap.id === selectedCapability)?.title}
