@@ -156,7 +156,7 @@ const CapabilitiesSection = () => {
                       </div>
                       <div className="mt-8">
                         <Button className="w-full md:w-auto">
-                          {capability.learnMore}
+                          Get Started
                         </Button>
                       </div>
                     </div>
