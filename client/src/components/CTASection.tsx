@@ -14,12 +14,17 @@ const CTASection = () => {
             user-friendly applications.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-primary hover:bg-white/90 font-medium px-6 py-6">
+            <Button
+              variant="gradient"
+              size="lg"
+              className="text-center font-medium px-8"
+            >
               Request a Demo
             </Button>
             <Button
               variant="whiteOutline"
-              className="border border-white/50 text-white font-medium px-6 py-6 hover:bg-white/20"
+              size="lg"
+              className="text-center font-medium px-8"
             >
               Learn More
             </Button>

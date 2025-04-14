@@ -158,7 +158,12 @@ const CapabilitiesSection = () => {
                         <Button className="w-full md:w-auto" onClick={() => window.location.href = "#get-started"}>
                           Get Started
                         </Button>
-                        <Button variant="outline" className="w-full md:w-auto bg-white/10" onClick={() => window.location.href = "#get-started"}>
+                        <Button
+                          variant="gradient"
+                          size="lg"
+                          className="w-full md:w-auto text-center font-medium px-8"
+                          onClick={() => window.location.href = "#get-started"}
+                        >
                           View Demo
                         </Button>
                       </div>

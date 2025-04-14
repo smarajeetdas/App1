@@ -27,15 +27,17 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="#capabilities">
               <Button
-                variant="default"
-                className="text-center font-medium px-6 py-6 rounded-md shadow-lg hover:shadow-xl transition-shadow bg-primary hover:bg-primary/90"
+                variant="gradient"
+                size="lg"
+                className="text-center font-medium px-8"
               >
                 Explore Capabilities
               </Button>
             </Link>
             <Button
-              variant="outline"
-              className="text-center font-medium px-6 py-6 rounded-md bg-white/20 text-white border-white hover:bg-white/30 transition-colors"
+              variant="whiteOutline"
+              size="lg"
+              className="text-center font-medium px-8"
             >
               Request Demo
             </Button>
