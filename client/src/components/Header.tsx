@@ -18,15 +18,17 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
-            Relay
-          </Link>
+          <div className="flex flex-col">
+            <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
+              Relay
+            </Link>
+            <span className="text-sm font-semibold text-primary hidden md:block">
+              AI Powered
+            </span>
+          </div>
           <div className="flex flex-col ml-2">
             <span className="text-xs text-neutral-700/70 hidden md:block">
               Quality Driven Next-Gen Automation
-            </span>
-            <span className="text-xs font-semibold text-primary hidden md:block">
-              AI Powered
             </span>
           </div>
         </div>
