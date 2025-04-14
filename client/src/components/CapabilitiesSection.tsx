@@ -155,7 +155,12 @@ const CapabilitiesSection = () => {
                     ))}
                       </div>
                       <div className="mt-8 flex gap-4">
-                        <Button className="w-full md:w-auto" onClick={() => window.location.href = "#get-started"}>
+                        <Button
+                          variant="gradient"
+                          size="lg"
+                          className="w-full md:w-auto text-center font-medium px-8"
+                          onClick={() => window.location.href = "#get-started"}
+                        >
                           Get Started
                         </Button>
                         <Button
