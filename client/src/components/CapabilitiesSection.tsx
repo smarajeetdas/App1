@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import { Check, TestTube2, LineChart, Smartphone, Monitor, Bomb } from "lucide-react";
-import { useState } from "react";
 import { Button } from "./ui/button";
 
 const CapabilitiesSection = () => {
