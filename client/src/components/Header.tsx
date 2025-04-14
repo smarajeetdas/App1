@@ -26,11 +26,7 @@ const Header = () => {
               AI Powered
             </span>
           </div>
-          <div className="flex flex-col ml-4">
-            <span className="text-xs text-neutral-700/70 hidden md:block">
-              Quality Driven Next-Gen Automation
-            </span>
-          </div>
+          
         </div>
 
         <div className="hidden md:flex space-x-6 text-sm">
