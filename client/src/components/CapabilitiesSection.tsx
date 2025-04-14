@@ -1,6 +1,7 @@
+
 import { Check } from "lucide-react";
 import { useState } from "react";
-import { useToggle } from "@/hooks/useToggle";
+import { Button } from "./ui/button";
 
 const CapabilitiesSection = () => {
   const [selectedCapability, setSelectedCapability] = useState<string | null>(null);
@@ -11,64 +12,74 @@ const CapabilitiesSection = () => {
       title: "Functional Automation",
       subtitle: "End to End Automation Framework",
       description: "Orchestrate test flows effortlessly with a few clicks – no code needed",
+      image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
       features: [
         "Automate execution using Selenium and Playwright frameworks",
         "Import APIs using Swagger for quick and structured test setups",
         "Test dynamic elements, apply validations, add custom JS",
         "Integrate Vault configs, CI/CD pipelines, and JIRA",
         "Create and organize filter, clone test cases, suites"
-      ]
+      ],
+      learnMore: "Discover how our functional automation can streamline your testing process"
     },
     {
       id: "performance",
       title: "Performance Lab",
       subtitle: "Real-World Performance Testing",
       description: "Reuse functional test cases to execute multi-region, scalable scenarios",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
       features: [
         "Design load configuration based on user traffic",
         "Simulate load from multiple geo-locations",
         "Visualize test progress with live monitoring",
         "Identify Runtime bottlenecks",
         "Analyze performance trends"
-      ]
+      ],
+      learnMore: "Learn about our advanced performance testing capabilities"
     },
     {
       id: "mobile",
       title: "Mobile Automation",
       subtitle: "Comprehensive Mobile Testing",
       description: "Conduct seamless mobile application tests on physical and cloud-based devices",
+      image: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=800&q=80",
       features: [
         "Executions on SauceLab & Physical Device",
         "Real time capabilities of localization",
         "Run sequential and parallel tests",
         "Automatically capture screenshots",
         "Conduct manual testing on real browsers"
-      ]
+      ],
+      learnMore: "Explore our mobile automation solutions"
     },
     {
       id: "desktop",
       title: "Desktop Automation",
       subtitle: "Cross-Platform Desktop Testing",
       description: "Unified testing across Windows and macOS platforms",
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
       features: [
         "Robust, script-free test creation",
         "Compatible with Windows and MAC OS",
         "Smarter automation with locating strategies",
         "Data-driven tests with validations",
         "Parallel execution runs"
-      ]
+      ],
+      learnMore: "Discover desktop automation capabilities"
     },
     {
       id: "chaos",
       title: "Chaos Simulator",
       subtitle: "Controlled Chaos Engineering",
       description: "Introduce failure. Build confidence. Empower your teams",
+      image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
       features: [
         "Test Failure and uncover system weakness",
         "Simulate real-world infrastructure issues",
         "Launch fault experiments without overhead",
         "Bring chaos to where applications live"
-      ]
+      ],
+      learnMore: "Learn more about chaos engineering"
     }
   ];
 
@@ -82,15 +93,29 @@ const CapabilitiesSection = () => {
             {[...capabilities, ...capabilities].map((capability, index) => (
               <div
                 key={`${capability.id}-${index}`}
-                className={`flex-none w-72 p-6 rounded-xl cursor-pointer transition-all duration-300 ${
+                className={`flex-none w-96 rounded-xl cursor-pointer transition-all duration-300 overflow-hidden ${
                   selectedCapability === capability.id
                     ? "bg-primary text-white"
                     : "bg-slate-50 hover:bg-slate-100"
                 }`}
                 onClick={() => setSelectedCapability(capability.id)}
               >
-                <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
-                <p className="text-sm opacity-80">{capability.subtitle}</p>
+                <img 
+                  src={capability.image} 
+                  alt={capability.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
+                  <p className="text-sm opacity-80 mb-4">{capability.subtitle}</p>
+                  <p className="text-sm mb-4">{capability.description}</p>
+                  <Button
+                    variant={selectedCapability === capability.id ? "secondary" : "default"}
+                    className="w-full"
+                  >
+                    Learn More
+                  </Button>
+                </div>
               </div>
             ))}
           </div>
@@ -110,6 +135,11 @@ const CapabilitiesSection = () => {
                         <p>{feature}</p>
                       </div>
                     ))}
+                  </div>
+                  <div className="mt-8">
+                    <Button className="w-full md:w-auto">
+                      {capability.learnMore}
+                    </Button>
                   </div>
                 </div>
               )
