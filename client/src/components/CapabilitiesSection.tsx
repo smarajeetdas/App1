@@ -1,10 +1,18 @@
 
-import { Check } from "lucide-react";
+import { Check, TestTube2, LineChart, Smartphone, Monitor, Bomb } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
 const CapabilitiesSection = () => {
   const [selectedCapability, setSelectedCapability] = useState<string | null>(null);
+
+  const capabilityIcons = {
+    functional: TestTube2,
+    performance: LineChart,
+    mobile: Smartphone,
+    desktop: Monitor,
+    chaos: Bomb
+  };
 
   const capabilities = [
     {
@@ -100,11 +108,11 @@ const CapabilitiesSection = () => {
                 }`}
                 onClick={() => setSelectedCapability(capability.id)}
               >
-                <img 
-                  src={capability.image} 
-                  alt={capability.title}
-                  className="w-full h-48 object-cover"
-                />
+                <div className="w-full h-48 flex items-center justify-center bg-slate-100">
+                  {React.createElement(capabilityIcons[capability.id as keyof typeof capabilityIcons], {
+                    className: "w-24 h-24 text-primary"
+                  })}
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
                   <p className="text-sm opacity-80">{capability.subtitle}</p>
