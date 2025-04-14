@@ -120,7 +120,6 @@ const CapabilitiesSection = () => {
                     <p className="text-sm opacity-80">{capability.subtitle}</p>
                   </div>
                 </div>
-                </div>
               </div>
             ))}
           </div>
