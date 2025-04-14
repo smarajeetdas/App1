@@ -154,9 +154,12 @@ const CapabilitiesSection = () => {
                       </div>
                     ))}
                       </div>
-                      <div className="mt-8">
+                      <div className="mt-8 flex gap-4">
                         <Button className="w-full md:w-auto">
                           Get Started
+                        </Button>
+                        <Button variant="outline" className="w-full md:w-auto">
+                          View Demo
                         </Button>
                       </div>
                     </div>
