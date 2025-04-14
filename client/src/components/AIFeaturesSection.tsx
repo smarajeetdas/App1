@@ -1,59 +1,20 @@
-import { Bot, Zap, Brain, EyeIcon, Bug, Wand2 } from "lucide-react";
+import { Bot, Zap, Brain, EyeIcon, Bug, Wand2, FileText, CheckCircle2, Database } from "lucide-react";
 
 const features = [
   {
-    icon: <Bot className="text-primary" />,
-    title: "AI Test Generation",
-    description:
-      "Automatically generate test cases from user stories, requirements, or application scanning.",
-    launch: "Launching Q3 2023",
-    color: "border-primary",
-    bgColor: "bg-primary/10",
+    icon: <FileText className="h-6 w-6 text-white" />,
+    title: "Intelligent Email Summary Generation",
+    description: "Automatically generate concise summaries from lengthy email threads for quick understanding.",
   },
   {
-    icon: <Bug className="text-blue-500" />,
-    title: "Smart Failure Analysis",
-    description:
-      "ML-powered root cause analysis that identifies patterns in test failures and suggests fixes.",
-    launch: "Launching Q4 2023",
-    color: "border-blue-500",
-    bgColor: "bg-blue-500/10",
+    icon: <CheckCircle2 className="h-6 w-6 text-white" />,
+    title: "Intelligent Test Case Validation",
+    description: "AI-driven validation of test cases to ensure comprehensive coverage and reliability.",
   },
   {
-    icon: <Wand2 className="text-cyan-500" />,
-    title: "Self-Healing Tests",
-    description:
-      "Automatically adapt tests to UI changes, reducing maintenance effort and test flakiness.",
-    launch: "Launching Q1 2024",
-    color: "border-cyan-500",
-    bgColor: "bg-cyan-500/10",
-  },
-  {
-    icon: <Zap className="text-primary" />,
-    title: "Predictive Test Selection",
-    description:
-      "AI selects the most relevant tests to run based on code changes, maximizing coverage while minimizing execution time.",
-    launch: "Launching Q2 2024",
-    color: "border-primary",
-    bgColor: "bg-primary/10",
-  },
-  {
-    icon: <Brain className="text-blue-500" />,
-    title: "Natural Language Test Creation",
-    description:
-      "Create test flows using plain English descriptions that are automatically converted to executable tests.",
-    launch: "Launching Q3 2024",
-    color: "border-blue-500",
-    bgColor: "bg-blue-500/10",
-  },
-  {
-    icon: <EyeIcon className="text-cyan-500" />,
-    title: "Visual Validation AI",
-    description:
-      "Intelligently detect visual regressions that matter while ignoring minor pixel differences and expected content changes.",
-    launch: "Launching Q4 2024",
-    color: "border-cyan-500",
-    bgColor: "bg-cyan-500/10",
+    icon: <Database className="h-6 w-6 text-white" />,
+    title: "Intelligent Test Data Recommendation",
+    description: "Smart suggestions for test data based on application behavior and patterns.",
   },
 ];
 
@@ -72,39 +33,19 @@ const AIFeaturesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-md p-6 border-t-4 ${feature.color} hover:shadow-lg transition-shadow duration-300`}
+              className="bg-white rounded-xl shadow-md p-6 border-t-4 border-primary hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex items-center mb-4">
-                <div
-                  className={`w-10 h-10 rounded-full ${feature.bgColor} flex items-center justify-center mr-3`}
-                >
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold">{feature.title}</h3>
               </div>
-              <p className="text-slate-700/70 mb-4">{feature.description}</p>
-              <div className="flex items-center text-xs text-slate-700/50">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="mr-1"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                <span>{feature.launch}</span>
-              </div>
+              <p className="text-slate-700/70">{feature.description}</p>
             </div>
           ))}
         </div>
