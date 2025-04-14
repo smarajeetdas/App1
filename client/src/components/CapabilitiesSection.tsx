@@ -81,7 +81,7 @@ const CapabilitiesSection = () => {
       title: "Chaos Simulator",
       subtitle: "Controlled Chaos Engineering",
       description: "Introduce failure. Build confidence. Empower your teams",
-      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?auto=format&fit=crop&w=800&q=80",
       features: [
         "Test Failure and uncover system weakness",
         "Simulate real-world infrastructure issues",
