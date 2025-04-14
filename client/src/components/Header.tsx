@@ -19,7 +19,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <div className="flex flex-col items-start">
-            <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
+            <Link href="/" className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
               Relay
             </Link>
             <span className="text-xs font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700 -mt-1 hidden md:block">
