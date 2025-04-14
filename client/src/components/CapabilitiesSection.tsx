@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Check, TestTube2, LineChart, Smartphone, Monitor, Bomb } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
@@ -158,7 +158,7 @@ const CapabilitiesSection = () => {
                         <Button className="w-full md:w-auto" onClick={() => window.location.href = "#get-started"}>
                           Get Started
                         </Button>
-                        <Button variant="outline" className="w-full md:w-auto" onClick={() => window.location.href = "#get-started"}>
+                        <Button variant="outline" className="w-full md:w-auto bg-white/10" onClick={() => window.location.href = "#get-started"}>
                           View Demo
                         </Button>
                       </div>
