@@ -109,14 +109,17 @@ const CapabilitiesSection = () => {
                 }`}
                 onClick={() => setSelectedCapability(capability.id)}
               >
-                <div className="w-full h-48 flex items-center justify-center bg-slate-100">
-                  {React.createElement(capabilityIcons[capability.id as keyof typeof capabilityIcons], {
-                    className: "w-24 h-24 text-primary"
-                  })}
+                <div className="flex items-center p-6 bg-slate-100">
+                  <div className="flex-shrink-0">
+                    {React.createElement(capabilityIcons[capability.id as keyof typeof capabilityIcons], {
+                      className: "w-12 h-12 text-primary"
+                    })}
+                  </div>
+                  <div className="ml-6">
+                    <h3 className="text-xl font-semibold">{capability.title}</h3>
+                    <p className="text-sm opacity-80">{capability.subtitle}</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
-                  <p className="text-sm opacity-80">{capability.subtitle}</p>
                 </div>
               </div>
             ))}
